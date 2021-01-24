@@ -44,7 +44,7 @@ def new_search(request):
             post_price = 'N/A'
 
         if post.find(class_='result-image').get('data-ids'):
-            post_image_id = post.find(class_='result-image').get('data-ids')    .split(':')[1].replace(",3", "")
+            post_image_id = post.find(class_='result-image').get('data-ids').split(':')[1].replace(",3", "")
             print(post_image_id)
             post_image_url = BASE_IMAGE_URL.format(post_image_id)
             print(post_image_url)
